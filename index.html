@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emergency Service Directory</title>
+    <link rel="icon" type="image/x-icon" href="./assets/logo.png">
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
 <body  class="px-2">
     <!-- Nav Bar Section -->
@@ -49,6 +53,191 @@
                 Project by Government of the People’s Republic of Bangladesh</p>
         </div>
     </header>
+
+
+    <!-- Card & history Section -->
+    <section class="bg-[#f5fff6] mx-auto p-8 flex flex-col md:flex-row gap-4">
+        <div class="left-container flex-1 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-5">
+            <div class="card h-[360px] bg-white shadow-md p-10">
+                <div class="flex justify-between items-center mb-3">
+                    <img src="./assets/emergency.png" alt="emergency"
+                        class="w-[50px] h-[50px] bg-[#FFE3E2] rounded-2xl p-3">
+                    <span class="likeCount cursor-pointer"><i class="ri-heart-line"></i></span>
+                </div>
+                <h1 class="text-24 font-semibold mb-2">National Emergency</h1>
+                <p class="text-gray-500 mb-4 service-name">National Emergency</p>
+                <p class="font-bold text-2xl mb-2 service-number">999</p>
+                <p class="text-gray-400 bg-gray-200 px-4 py-2 rounded-full w-fit">All</p>
+                <div class="flex gap-3 mt-5">
+                    <button class="btn flex-1  bg-gray-200 text-black copy-btn"><span><i
+                                class="ri-file-copy-line"></i></span>Copy</button>
+                    <button onclick="updateCoinCount('National Emergency', '999')"
+                        class="btn flex-1 bg-[#00A63E] text-white"><span><i
+                                class="ri-phone-line"></i></span>Call</button>
+                </div>
+            </div>
+
+            <div class="card h-[360px] bg-white shadow-md p-10">
+                <div class="flex justify-between items-center mb-3">
+                    <img src="./assets/police.png" alt="police" class="w-[50px] h-[50px] bg-[#FFE3E2] rounded-2xl p-3">
+                    <span class="likeCount cursor-pointer"><i class="ri-heart-line"></i></span>
+                </div>
+                <h1 class="text-24 font-semibold mb-2">Police</h1>
+                <p class="text-gray-500 mb-4 service-name">Police</p>
+                <p class="font-bold text-2xl mb-2 service-number">999</p>
+                <p class="text-gray-400 bg-gray-200 px-4 py-2 rounded-full w-fit">Police</p>
+                <div class="flex gap-3 mt-5">
+                    <button class="btn flex-1  bg-gray-200 text-black copy-btn"><span><i
+                                class="ri-file-copy-line"></i></span>Copy</button>
+                    <button onclick="updateCoinCount('Police', '999')"
+                        class="btn flex-1 bg-[#00A63E] text-white"><span><i
+                                class="ri-phone-line"></i></span>Call</button>
+                </div>
+            </div>
+
+            <div class="card h-[360px] bg-white shadow-md p-10">
+                <div class="flex justify-between items-center mb-3">
+                    <img src="./assets/fire-service.png" alt="fire-service"
+                        class="w-[50px] h-[50px] bg-[#FFE3E2] rounded-2xl p-3">
+                    <span class="likeCount cursor-pointer"><i class="ri-heart-line"></i></span>
+                </div>
+                <h1 class="text-24 font-semibold mb-2">Fire Service</h1>
+                <p class="text-gray-500 mb-4 service-name">Fire Service</p>
+                <p class="font-bold text-2xl mb-2 service-number">999</p>
+                <p class="text-gray-400 bg-gray-200 px-4 py-2 rounded-full w-fit">Fire</p>
+                <div class="flex gap-3 mt-5">
+                    <button class="btn flex-1  bg-gray-200 text-black copy-btn"><span><i
+                                class="ri-file-copy-line"></i></span>Copy</button>
+                    <button onclick="updateCoinCount('Fire Service', '999')"
+                        class="btn flex-1 bg-[#00A63E] text-white"><span><i
+                                class="ri-phone-line"></i></span>Call</button>
+                </div>
+            </div>
+
+            <div class="card h-[360px] bg-white shadow-md p-10">
+                <div class="flex justify-between items-center mb-3">
+                    <img src="./assets/ambulance.png" alt="ambulance"
+                        class="w-[50px] h-[50px] bg-[#FFE3E2] rounded-2xl p-3">
+                    <span class="likeCount cursor-pointer"><i class="ri-heart-line"></i></span>
+                </div>
+                <h1 class="text-24 font-semibold mb-2">Ambulance Service</h1>
+                <p class="text-gray-500 mb-4 service-name">Ambulance Service</p>
+                <p class="font-bold text-2xl mb-2 service-number">1994-999999</p>
+                <p class="text-gray-400 bg-gray-200 px-4 py-2 rounded-full w-fit">Health</p>
+                <div class="flex gap-3 mt-5">
+                    <button class="btn flex-1  bg-gray-200 text-black copy-btn"><span><i
+                                class="ri-file-copy-line"></i></span>Copy</button>
+                    <button onclick="updateCoinCount('Ambulance', '1994-999999')"
+                        class="btn flex-1 bg-[#00A63E] text-white"><span><i
+                                class="ri-phone-line"></i></span>Call</button>
+                </div>
+            </div>
+
+            <div class="card h-[360px] bg-white shadow-md p-10">
+                <div class="flex justify-between items-center mb-3">
+                    <img src="./assets/emergency.png" alt="emergency"
+                        class="w-[50px] h-[50px] bg-[#FFE3E2] rounded-2xl p-3">
+                    <span class="likeCount cursor-pointer"><i class="ri-heart-line"></i></span>
+                </div>
+                <h1 class="text-24 font-semibold mb-2">Women & Child Helpline</h1>
+                <p class="text-gray-500 mb-4 service-name">Women & Child Helpline</p>
+                <p class="font-bold text-2xl mb-2 service-number">109</p>
+                <p class="text-gray-400 bg-gray-200 px-4 py-2 rounded-full w-fit">Help</p>
+                <div class="flex gap-3 mt-5">
+                    <button class="btn flex-1  bg-gray-200 text-black copy-btn"><span><i
+                                class="ri-file-copy-line"></i></span>Copy</button>
+                    <button onclick="updateCoinCount('Women & Child Helpline', '109')"
+                        class="btn flex-1 bg-[#00A63E] text-white"><span><i
+                                class="ri-phone-line"></i></span>Call</button>
+                </div>
+            </div>
+
+            <div class="card h-[360px] bg-white shadow-md p-10">
+                <div class="flex justify-between items-center mb-3">
+                    <img src="./assets/emergency.png" alt="emergency"
+                        class="w-[50px] h-[50px] bg-[#FFE3E2] rounded-2xl p-3">
+                    <span class="likeCount cursor-pointer"><i class="ri-heart-line"></i></span>
+                </div>
+                <h1 class="text-24 font-semibold mb-2">Anti-Corruption Helpline</h1>
+                <p class="text-gray-500 mb-4 service-name">Anti-Corruption</p>
+                <p class="font-bold text-2xl mb-2 service-number">106</p>
+                <p class="text-gray-400 bg-gray-200 px-4 py-2 rounded-full w-fit">Govt.</p>
+                <div class="flex gap-3 mt-5">
+                    <button class="btn flex-1  bg-gray-200 text-black copy-btn"><span><i
+                                class="ri-file-copy-line"></i></span>Copy</button>
+                    <button onclick="updateCoinCount('Anti-Corruption', '106')"
+                        class="btn flex-1 bg-[#00A63E] text-white"><span><i
+                                class="ri-phone-line"></i></span>Call</button>
+                </div>
+            </div>
+
+            <div class="card h-[360px] bg-white shadow-md p-10">
+                <div class="flex justify-between items-center mb-3">
+                    <img src="./assets/emergency.png" alt="emergency"
+                        class="w-[50px] h-[50px] bg-[#FFE3E2] rounded-2xl p-3">
+                    <span class="likeCount cursor-pointer"><i class="ri-heart-line"></i></span>
+                </div>
+                <h1 class="text-24 font-semibold mb-2">Electricity Helpline</h1>
+                <p class="text-gray-500 mb-4 service-name">Electricity Outage</p>
+                <p class="font-bold text-2xl mb-2 service-number">16216</p>
+                <p class="text-gray-400 bg-gray-200 px-4 py-2 rounded-full w-fit">Electricity</p>
+                <div class="flex gap-3 mt-5">
+                    <button class="btn flex-1  bg-gray-200 text-black copy-btn"><span><i
+                                class="ri-file-copy-line"></i></span>Copy</button>
+                    <button onclick="updateCoinCount('Electricity Outage', '16216')"
+                        class="btn flex-1 bg-[#00A63E] text-white"><span><i
+                                class="ri-phone-line"></i></span>Call</button>
+                </div>
+            </div>
+
+            <div class="card h-[360px] bg-white shadow-md p-10">
+                <div class="flex justify-between items-center mb-3">
+                    <img src="./assets/emergency.png" alt="emergency"
+                        class="w-[50px] h-[50px] bg-[#FFE3E2] rounded-2xl p-3">
+                    <span class="likeCount cursor-pointer"><i class="ri-heart-line"></i></span>
+                </div>
+                <h1 class="text-24 font-semibold mb-2">Brac Helpline</h1>
+                <p class="text-gray-500 mb-4 service-name">Brac</p>
+                <p class="font-bold text-2xl mb-2 service-number">16445</p>
+                <p class="text-gray-400 bg-gray-200 px-4 py-2 rounded-full w-fit">NGO</p>
+                <div class="flex gap-3 mt-5">
+                    <button class="btn flex-1  bg-gray-200 text-black copy-btn"><span><i
+                                class="ri-file-copy-line"></i></span>Copy</button>
+                    <button onclick="updateCoinCount('Brac', '16445')"
+                        class="btn flex-1 bg-[#00A63E] text-white"><span><i
+                                class="ri-phone-line"></i></span>Call</button>
+                </div>
+            </div>
+
+            <div class="card h-[360px] bg-white shadow-md p-10">
+                <div class="flex justify-between items-center mb-3">
+                    <img src="./assets/emergency.png" alt="emergency"
+                        class="w-[50px] h-[50px] bg-[#FFE3E2] rounded-2xl p-3">
+                    <span class="likeCount cursor-pointer"><i class="ri-heart-line"></i></span>
+                </div>
+                <h1 class="text-24 font-semibold mb-2">Bangladesh Railway Helpline</h1>
+                <p class="text-gray-500 mb-4 service-name">Bangladesh Railway</p>
+                <p class="font-bold text-2xl mb-2 service-number">163</p>
+                <p class="text-gray-400 bg-gray-200 px-4 py-2 rounded-full w-fit">Travel</p>
+                <div class="flex gap-3 mt-5">
+                    <button class="btn flex-1  bg-gray-200 text-black copy-btn"><span><i
+                                class="ri-file-copy-line"></i></span>Copy</button>
+                    <button onclick="updateCoinCount('Bangladesh Railway', '163')"
+                        class="btn flex-1 bg-[#00A63E] text-white"><span><i
+                                class="ri-phone-line"></i></span>Call</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="callHistory" class="right-container w-full md:w-80 bg-white rounded-lg shadow-md p-4 h-[1120px]">
+            <div class="flex justify-between items-center gap-3">
+                <h1 class="text-xl font-semibold mb-2 flex items-center gap-2"><i class="ri-history-line"></i> Call
+                    History</h1>
+                <button id="clearHistoryBtn" class="btn bg-[#00A63E] text-white rounded-full px-4">Clear</button>
+            </div>
+            <div id="callHistoryItems"></div>
+        </div>
+    </section>
 
 
 
